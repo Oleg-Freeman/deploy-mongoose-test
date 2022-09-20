@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const app = express();
-const port = process.env.PORT || 5001;
+const port = 5001;
 const mongoURL =
   "mongodb+srv://user1:qwerty123456.@cluster0.ltv3e58.mongodb.net/admin?authSource=admin&replicaSet=atlas-kety85-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true";
 
