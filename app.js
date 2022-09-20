@@ -5,6 +5,10 @@ const app = express();
 const mongoURL =
   "mongodb+srv://user1:qwerty123456.@cluster0.ltv3e58.mongodb.net/admin?authSource=admin&replicaSet=atlas-kety85-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true";
 
+app.get("/", (req, res, next) => {
+  res.send("<h1>Main Page</h1>");
+});
+
 app.listen(5000, () => {
   console.log("Server started");
 
